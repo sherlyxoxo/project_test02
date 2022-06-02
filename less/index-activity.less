@@ -1,0 +1,173 @@
+@import 'base';
+@import 'common';
+
+// 内容
+section{
+    padding-top: (20/@rootsize);
+    padding-bottom: (100/@rootsize);
+    .event{  
+        margin-bottom:(20/@rootsize);
+        padding: (30/@rootsize);
+        background-color: #fff;
+        .title{
+            margin-bottom: (20/@rootsize);
+            font-size: (26/@rootsize);
+            font-weight: bold;
+        }
+        .top{
+            display: flex;
+            align-items: center;
+            .left{
+                margin-right: (206/@rootsize);
+                span{
+                    
+                    margin-right:(20/@rootsize) ;
+                    font-size: (24/@rootsize);
+                    color: #888;
+                    
+                }
+                i{
+                    font-size: (22/@rootsize);
+                    color: orange;
+                    &.off{
+                        color: #ccc;
+                    }
+                }
+            }
+            .right{
+                .collect{
+                    margin-bottom: (10/@rootsize);
+                    width: (62/@rootsize);
+                    height: (62/@rootsize);
+                    border-radius: 50%;
+                    background: #FFF3F3;
+                    background-image: url(../images/收藏.png);
+                    background-size: 50%;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                }
+            }
+            
+        }
+        .center{
+            display: flex;
+            margin-top: (18/@rootsize);
+            padding: (30/@rootsize) 0;
+            border-top: 1px solid #D9DCE6;
+            border-bottom: 1px solid #D9DCE6;
+            a{
+                flex: 1;
+                text-align: center;
+                h4{
+                    margin-bottom: (8/@rootsize);
+                    font-size: (26/@rootsize);
+                    font-weight: normal;
+                    color: #888;
+                }
+                p{
+                    font-size: @font-size;
+                }
+            }
+            a:nth-child(2){
+                border-left: 1px solid #D9DCE6;
+                border-right: 1px solid #D9DCE6;
+            }
+        }
+        .bottom{
+            margin-top: (30/@rootsize);
+            .note{
+                display: block;
+                margin-bottom: (30/@rootsize);
+                width: (690/@rootsize);
+                height: (44/@rootsize);
+                background: #FFF3F3;
+                border-radius: (22.5/@rootsize);
+                border-radius: (22.5/@rootsize);
+                text-align: center;
+                line-height: (44/@rootsize);
+                font-size: (24/@rootsize);
+                color: #F01513;
+            }
+            ul{
+                a{
+                    display: flex;
+                    align-items: center;
+                    display: block;
+                    font-size: (26/@rootsize);
+                    margin-top: (10/@rootsize);
+    
+                }
+                a::before{
+                    content: "";
+                    display: inline-block;
+                    margin-right: (7/@rootsize);
+                    margin-left: (100/@rootsize);
+                    width: (26/@rootsize);
+                    height: (26/@rootsize);
+                    background-size: cover;
+                }
+                li:first-child a::before{
+                    background-image: url(../images/减.png);
+                }
+                li:nth-child(2) a::before{
+                    background-image: url(../images/折2.png);
+                }
+                li:nth-child(3) a::before{
+                    background-image: url(../images/票.png);
+                }
+                li:nth-child(4) a::before{
+                    background-image: url(../images/保.png);
+                }
+
+
+
+            }
+            
+
+        }
+    }
+    .common{
+        margin-bottom: (20/@rootsize);
+        background-color: #fff;
+    }
+    .common_title{
+        padding-left: (30/@rootsize);
+        height: (88/@rootsize);
+        line-height: (88/@rootsize);
+        font-size: @font-size;
+        border-bottom: 1px solid #f5f5f5;
+    }
+    .course{
+        .item{
+            padding: (30/@rootsize);
+            white-space: nowrap;
+            overflow-x: scroll;
+            overflow-y: hidden;
+      
+            a{
+                display: inline-block;
+                margin-right: (22/@rootsize);
+                width: (156/@rootsize);
+                height: (94/@rootsize);
+
+            }
+            a:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+    .info{
+        ul{
+            padding:0 (30/@rootsize);
+            li{
+                height: (86/@rootsize);
+                border-bottom: 1px solid #E2E5ED;
+                font-size: (26/@rootsize);
+                line-height: (86/@rootsize);
+            }
+            li:last-child{
+                border-bottom:  0;
+            }
+        }
+    }
+}

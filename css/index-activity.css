@@ -1,0 +1,284 @@
+* {
+  margin: 0 ;
+  padding: 0;
+}
+body {
+  padding: 0;
+  margin: 0;
+  color: #333;
+  background-color: #F2F4FB;
+  font-family: PingFangSC-Regular;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+ul {
+  list-style-type: none;
+  margin-bottom: 0;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+p {
+  margin: 0;
+}
+a:hover {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+header {
+  z-index: 33;
+  background-color: #F2F4FB;
+}
+header .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem;
+  background-color: #fff;
+}
+header .top img {
+  width: 2.76rem;
+}
+header .top .right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+header .top .right a:first-child {
+  font-size: 0.42666667rem;
+  font-weight: bold;
+}
+header .top .right a:nth-child(2) {
+  margin-top: 0.08rem;
+  font-size: 0.32rem;
+  color: #666666;
+}
+header .top .right span {
+  display: inline-block;
+  vertical-align: middle;
+}
+header .top .right a:first-child span {
+  margin-right: 0.13333333rem;
+  width: 0.8rem;
+  height: 0.48rem;
+  background-image: url(../images/品牌.png);
+  background-size: cover;
+}
+header .top .right a:nth-child(2) span {
+  margin-right: 0.06666667rem;
+  width: 0.32rem;
+  height: 0.32rem;
+  background-image: url(../images/减3.png);
+  background-size: cover;
+}
+header .center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.26666667rem 0.66666667rem;
+  font-size: 0.34666667rem;
+}
+header .center span {
+  display: inline-block;
+  width: 0.57333333rem;
+  height: 0.34666667rem;
+  background-image: url(../images/公告.png);
+  background-size: cover;
+  vertical-align: middle;
+}
+header .bottom {
+  display: flex;
+  background-color: #fff;
+}
+header .bottom a {
+  flex: 1;
+  height: 1.17333333rem;
+  line-height: 1.17333333rem;
+  text-align: center;
+  font-size: 0.37333333rem;
+  color: #888;
+}
+header .bottom a.active {
+  color: #333;
+}
+section {
+  margin-top: 4.16rem;
+}
+footer {
+  display: flex;
+  height: 1.30666667rem;
+  border-top: 1px solid #D9DCE6;
+  background-color: #fff;
+}
+footer a {
+  flex: 1;
+  text-align: center;
+  line-height: 1.30666667rem;
+  font-size: 0.42666667rem;
+}
+footer a:first-child {
+  background-color: #55B6ED;
+  background-image: url(../images/jion.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+section {
+  padding-top: 0.26666667rem;
+  padding-bottom: 1.33333333rem;
+}
+section .event {
+  margin-bottom: 0.26666667rem;
+  padding: 0.4rem;
+  background-color: #fff;
+}
+section .event .title {
+  margin-bottom: 0.26666667rem;
+  font-size: 0.34666667rem;
+  font-weight: bold;
+}
+section .event .top {
+  display: flex;
+  align-items: center;
+}
+section .event .top .left {
+  margin-right: 2.74666667rem;
+}
+section .event .top .left span {
+  margin-right: 0.26666667rem;
+  font-size: 0.32rem;
+  color: #888;
+}
+section .event .top .left i {
+  font-size: 0.29333333rem;
+  color: orange;
+}
+section .event .top .left i.off {
+  color: #ccc;
+}
+section .event .top .right .collect {
+  margin-bottom: 0.13333333rem;
+  width: 0.82666667rem;
+  height: 0.82666667rem;
+  border-radius: 50%;
+  background: #FFF3F3;
+  background-image: url(../images/收藏.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+section .event .center {
+  display: flex;
+  margin-top: 0.24rem;
+  padding: 0.4rem 0;
+  border-top: 1px solid #D9DCE6;
+  border-bottom: 1px solid #D9DCE6;
+}
+section .event .center a {
+  flex: 1;
+  text-align: center;
+}
+section .event .center a h4 {
+  margin-bottom: 0.10666667rem;
+  font-size: 0.34666667rem;
+  font-weight: normal;
+  color: #888;
+}
+section .event .center a p {
+  font-size: 0.37333333rem;
+}
+section .event .center a:nth-child(2) {
+  border-left: 1px solid #D9DCE6;
+  border-right: 1px solid #D9DCE6;
+}
+section .event .bottom {
+  margin-top: 0.4rem;
+}
+section .event .bottom .note {
+  display: block;
+  margin-bottom: 0.4rem;
+  width: 9.2rem;
+  height: 0.58666667rem;
+  background: #FFF3F3;
+  border-radius: 0.3rem;
+  text-align: center;
+  line-height: 0.58666667rem;
+  font-size: 0.32rem;
+  color: #F01513;
+}
+section .event .bottom ul a {
+  display: flex;
+  align-items: center;
+  display: block;
+  font-size: 0.34666667rem;
+  margin-top: 0.13333333rem;
+}
+section .event .bottom ul a::before {
+  content: "";
+  display: inline-block;
+  margin-right: 0.09333333rem;
+  margin-left: 1.33333333rem;
+  width: 0.34666667rem;
+  height: 0.34666667rem;
+  background-size: cover;
+}
+section .event .bottom ul li:first-child a::before {
+  background-image: url(../images/减.png);
+}
+section .event .bottom ul li:nth-child(2) a::before {
+  background-image: url(../images/折2.png);
+}
+section .event .bottom ul li:nth-child(3) a::before {
+  background-image: url(../images/票.png);
+}
+section .event .bottom ul li:nth-child(4) a::before {
+  background-image: url(../images/保.png);
+}
+section .common {
+  margin-bottom: 0.26666667rem;
+  background-color: #fff;
+}
+section .common_title {
+  padding-left: 0.4rem;
+  height: 1.17333333rem;
+  line-height: 1.17333333rem;
+  font-size: 0.37333333rem;
+  border-bottom: 1px solid #f5f5f5;
+}
+section .course .item {
+  padding: 0.4rem;
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+section .course .item a {
+  display: inline-block;
+  margin-right: 0.29333333rem;
+  width: 2.08rem;
+  height: 1.25333333rem;
+}
+section .course .item a:last-child {
+  margin-right: 0;
+}
+section .info ul {
+  padding: 0 0.4rem;
+}
+section .info ul li {
+  height: 1.14666667rem;
+  border-bottom: 1px solid #E2E5ED;
+  font-size: 0.34666667rem;
+  line-height: 1.14666667rem;
+}
+section .info ul li:last-child {
+  border-bottom: 0;
+}

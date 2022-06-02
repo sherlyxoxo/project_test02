@@ -1,0 +1,149 @@
+@import 'base';
+@import 'common';
+
+// 内容
+section{
+    padding-top: (20/@rootsize);
+    padding-bottom: (100/@rootsize);
+    .marks{
+        display: flex;
+        padding:(24/@rootsize) 0;
+        background-color: #fff;
+        margin-bottom: (20/@rootsize);
+       
+        .left{
+            width: (248/@rootsize);
+            border-right: 1px solid #D9DCE6;
+            text-align: center;
+            span{
+                font-size: (52/@rootsize);
+                font-weight: bold;
+                color: #FF9903;
+            }
+            p{
+                margin-top: (5/@rootsize);
+                font-size: @font-size;
+            }
+        }
+        .right{
+            padding-left: (60/@rootsize);
+            p{
+                font-size: (26/@rootsize);
+                i{
+                    font-size: (22/@rootsize);
+                    color: orange;
+                    &.off{
+                        color: #ccc;
+                    }
+                }
+                i:first-child{
+                    margin-left: (30/@rootsize);
+                }
+                .point{
+                    margin-left: (20/@rootsize);
+                    color: #FF9903;
+                }
+                .time{
+                    margin-left: (30/@rootsize);
+                }
+            }
+            p:nth-child(2){
+                margin: (5/@rootsize) 0;
+            }
+            
+        }
+
+    }
+    .comments{
+        background-color: #fff;
+        .top{
+            padding:(30/@rootsize) ;
+            border-bottom: 1px solid #f5f5f5;
+            a{
+                margin-right:(30/@rootsize) ;
+                font-size: @font-size;
+                color:#888 ;
+                &.active{
+                    color: #333;
+                }
+                
+            }
+
+        }
+        .bottom{
+            padding: (30/@rootsize);
+            a{
+                display: block;
+                position: relative;
+                padding-left: (40/@rootsize);
+                width: (321/@rootsize);
+                height: (62/@rootsize);    
+                border-radius: 31.5px;
+                border-radius: 31.5px;
+                background: #F9F9F9;
+                text-align: center;
+                line-height: (62/@rootsize);
+                font-size: @font-size;
+                color: #888;
+            
+            }
+            a::before{
+                content: "";
+                position: absolute;
+                left: (25/@rootsize);
+                top: (15/@rootsize);
+                display: inline-block;
+                width: (32/@rootsize);
+                height: (32/@rootsize);
+                background-image: url(../images/对号.png);
+                background-size: contain;
+                
+            }
+            li{
+                display: flex;
+                padding: (30/@rootsize) 0;
+                border-bottom: 1px solid #f5f5f5;
+                .user{
+                    margin-right: (20/@rootsize);
+                    width: (64/@rootsize);
+                    height: (64/@rootsize);
+                }
+                .txt{
+                    flex: 1;
+                    .name{
+                        display: flex;
+                        justify-content: space-between;
+                        h3{
+                            font-size: (32/@rootsize);
+                        }
+                        .score{
+                            i{
+                                font-size: (22/@rootsize);
+                                color: orange;
+                                &.off{
+                                    color: #ccc;
+                                }
+                            }                           
+                        }
+                    }
+                    .detail{
+                        p{
+                            margin-top: (7/@rootsize);
+                            font-size: (24/@rootsize);
+                            color: #999;
+                        }
+                    }
+                    .words{
+                        p{
+                            margin-top: (10/@rootsize);
+                            font-size: (26/@rootsize);
+                            color: #666;
+                        }
+                    }
+                
+                }
+            }
+
+        }
+    }
+}

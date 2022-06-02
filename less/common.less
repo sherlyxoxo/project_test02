@@ -1,0 +1,123 @@
+// out:false
+
+@rootsize: 75rem;
+@font-size: (28/@rootsize);
+
+
+
+
+// 头部固定
+header{
+    z-index: 33;
+    background-color: #F2F4FB;
+   .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:(30/@rootsize) ;
+    background-color: #fff;
+    img{
+        width: (207/@rootsize);
+    }
+    .right{ 
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        
+        a:first-child{
+            font-size: (32/@rootsize);
+            font-weight: bold;
+        }
+        a:nth-child(2){
+            margin-top: (6/@rootsize);
+            font-size: (24/@rootsize);
+            color: #666666;
+        }
+        span{
+            display: inline-block;
+           vertical-align: middle;
+        }
+
+        a:first-child span{
+            margin-right: (10/@rootsize);
+            width: (60/@rootsize);
+            height: (36/@rootsize);
+            background-image: url(../images/品牌.png);
+            background-size: cover;
+        }
+
+        a:nth-child(2) span{
+            margin-right: (5/@rootsize);
+            width: (24/@rootsize);
+            height: (24/@rootsize);
+            background-image: url(../images/减3.png);
+            background-size: cover;
+        }
+
+    }
+   } 
+   .center{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: (20/@rootsize) (50/@rootsize);
+       font-size: (26/@rootsize);
+       
+       span{
+           display: inline-block;
+           width: (43/@rootsize);
+           height: (26/@rootsize);
+           background-image: url(../images/公告.png);
+           background-size: cover;
+           vertical-align: middle;
+       }
+   }
+   .bottom{   
+           display: flex;
+           background-color: #fff;
+           a{
+               flex: 1;
+               height: (88/@rootsize);
+               line-height: (88/@rootsize);
+               text-align: center;
+               font-size: @font-size;
+               color: #888;
+               &.active{
+                color: #333;
+               }
+           }
+       
+   }
+   
+}
+
+
+// 内容滑动
+section{
+    margin-top: (312/@rootsize);
+}
+
+
+// 底部固定
+footer{
+    display: flex;
+    height: (98/@rootsize);
+    border-top: 1px solid #D9DCE6;
+    background-color: #fff;
+    a{
+        flex: 1;
+        text-align: center;
+        line-height: (98/@rootsize);
+        font-size: (32/@rootsize);
+
+    }
+    a:first-child{
+        background-color: #55B6ED;
+        background-image: url(../images/jion.jpeg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+    }
+    
+}

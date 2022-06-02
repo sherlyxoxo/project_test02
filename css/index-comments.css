@@ -1,0 +1,264 @@
+* {
+  margin: 0 ;
+  padding: 0;
+}
+body {
+  padding: 0;
+  margin: 0;
+  color: #333;
+  background-color: #F2F4FB;
+  font-family: PingFangSC-Regular;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+ul {
+  list-style-type: none;
+  margin-bottom: 0;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+p {
+  margin: 0;
+}
+a:hover {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+header {
+  z-index: 33;
+  background-color: #F2F4FB;
+}
+header .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem;
+  background-color: #fff;
+}
+header .top img {
+  width: 2.76rem;
+}
+header .top .right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+header .top .right a:first-child {
+  font-size: 0.42666667rem;
+  font-weight: bold;
+}
+header .top .right a:nth-child(2) {
+  margin-top: 0.08rem;
+  font-size: 0.32rem;
+  color: #666666;
+}
+header .top .right span {
+  display: inline-block;
+  vertical-align: middle;
+}
+header .top .right a:first-child span {
+  margin-right: 0.13333333rem;
+  width: 0.8rem;
+  height: 0.48rem;
+  background-image: url(../images/品牌.png);
+  background-size: cover;
+}
+header .top .right a:nth-child(2) span {
+  margin-right: 0.06666667rem;
+  width: 0.32rem;
+  height: 0.32rem;
+  background-image: url(../images/减3.png);
+  background-size: cover;
+}
+header .center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.26666667rem 0.66666667rem;
+  font-size: 0.34666667rem;
+}
+header .center span {
+  display: inline-block;
+  width: 0.57333333rem;
+  height: 0.34666667rem;
+  background-image: url(../images/公告.png);
+  background-size: cover;
+  vertical-align: middle;
+}
+header .bottom {
+  display: flex;
+  background-color: #fff;
+}
+header .bottom a {
+  flex: 1;
+  height: 1.17333333rem;
+  line-height: 1.17333333rem;
+  text-align: center;
+  font-size: 0.37333333rem;
+  color: #888;
+}
+header .bottom a.active {
+  color: #333;
+}
+section {
+  margin-top: 4.16rem;
+}
+footer {
+  display: flex;
+  height: 1.30666667rem;
+  border-top: 1px solid #D9DCE6;
+  background-color: #fff;
+}
+footer a {
+  flex: 1;
+  text-align: center;
+  line-height: 1.30666667rem;
+  font-size: 0.42666667rem;
+}
+footer a:first-child {
+  background-color: #55B6ED;
+  background-image: url(../images/jion.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+section {
+  padding-top: 0.26666667rem;
+  padding-bottom: 1.33333333rem;
+}
+section .marks {
+  display: flex;
+  padding: 0.32rem 0;
+  background-color: #fff;
+  margin-bottom: 0.26666667rem;
+}
+section .marks .left {
+  width: 3.30666667rem;
+  border-right: 1px solid #D9DCE6;
+  text-align: center;
+}
+section .marks .left span {
+  font-size: 0.69333333rem;
+  font-weight: bold;
+  color: #FF9903;
+}
+section .marks .left p {
+  margin-top: 0.06666667rem;
+  font-size: 0.37333333rem;
+}
+section .marks .right {
+  padding-left: 0.8rem;
+}
+section .marks .right p {
+  font-size: 0.34666667rem;
+}
+section .marks .right p i {
+  font-size: 0.29333333rem;
+  color: orange;
+}
+section .marks .right p i.off {
+  color: #ccc;
+}
+section .marks .right p i:first-child {
+  margin-left: 0.4rem;
+}
+section .marks .right p .point {
+  margin-left: 0.26666667rem;
+  color: #FF9903;
+}
+section .marks .right p .time {
+  margin-left: 0.4rem;
+}
+section .marks .right p:nth-child(2) {
+  margin: 0.06666667rem 0;
+}
+section .comments {
+  background-color: #fff;
+}
+section .comments .top {
+  padding: 0.4rem;
+  border-bottom: 1px solid #f5f5f5;
+}
+section .comments .top a {
+  margin-right: 0.4rem;
+  font-size: 0.37333333rem;
+  color: #888;
+}
+section .comments .top a.active {
+  color: #333;
+}
+section .comments .bottom {
+  padding: 0.4rem;
+}
+section .comments .bottom a {
+  display: block;
+  position: relative;
+  padding-left: 0.53333333rem;
+  width: 4.28rem;
+  height: 0.82666667rem;
+  border-radius: 31.5px;
+  background: #F9F9F9;
+  text-align: center;
+  line-height: 0.82666667rem;
+  font-size: 0.37333333rem;
+  color: #888;
+}
+section .comments .bottom a::before {
+  content: "";
+  position: absolute;
+  left: 0.33333333rem;
+  top: 0.2rem;
+  display: inline-block;
+  width: 0.42666667rem;
+  height: 0.42666667rem;
+  background-image: url(../images/对号.png);
+  background-size: contain;
+}
+section .comments .bottom li {
+  display: flex;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+section .comments .bottom li .user {
+  margin-right: 0.26666667rem;
+  width: 0.85333333rem;
+  height: 0.85333333rem;
+}
+section .comments .bottom li .txt {
+  flex: 1;
+}
+section .comments .bottom li .txt .name {
+  display: flex;
+  justify-content: space-between;
+}
+section .comments .bottom li .txt .name h3 {
+  font-size: 0.42666667rem;
+}
+section .comments .bottom li .txt .name .score i {
+  font-size: 0.29333333rem;
+  color: orange;
+}
+section .comments .bottom li .txt .name .score i.off {
+  color: #ccc;
+}
+section .comments .bottom li .txt .detail p {
+  margin-top: 0.09333333rem;
+  font-size: 0.32rem;
+  color: #999;
+}
+section .comments .bottom li .txt .words p {
+  margin-top: 0.13333333rem;
+  font-size: 0.34666667rem;
+  color: #666;
+}

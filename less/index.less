@@ -1,0 +1,89 @@
+@import 'base';
+@import 'common';
+
+// 内容滑动
+section{
+    .left{
+        position: fixed;
+        left: 0;
+        padding-top: (20/@rootsize);
+        width: (240/@rootsize);
+       
+        ul{
+            background-color: #fff;
+            padding-left: (36/@rootsize);
+            padding-bottom: (100/@rootsize);
+            height: (932/@rootsize);
+            overflow:scroll;
+          
+           
+            a{
+                display: block;
+                margin-top: (40/@rootsize);
+              
+                font-size: @font-size;
+            }
+        }
+    }
+    .right{
+        float: right;
+        width: (490/@rootsize);
+        overflow:scroll;
+        padding-bottom: (100/@rootsize);
+        .title{
+            height: (60/@rootsize);
+            
+            color: #888;
+            font-size: (24/@rootsize);
+            font-weight: normal;
+            h5{
+                line-height: (60/@rootsize);
+            }
+        }
+        li{
+            padding:0 (20/@rootsize);
+            background-color: #fff;
+           .course{
+            display: flex;
+            padding:(20/@rootsize) 0;
+            border-top: 1px solid #D9DCE6;
+            img{
+                width: (204/@rootsize);
+                height: 100%;
+                margin-right:(20/@rootsize) ;
+            }
+            .txt{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                h6{
+                    font-size: @font-size;
+                    font-weight: bold;
+
+                }
+                p{
+                    color: #888;
+                    font-size: (24/@rootsize);
+                }
+                a{
+                    display: block;
+                    width: (196/@rootsize);
+                    height: (46/@rootsize);
+                    background: #EDF8FF;
+                    line-height: (46/@rootsize);
+                    font-size: (24/@rootsize);
+                    text-align: center;
+                    color: #1C9FEA;
+                }
+            }
+
+           }
+           
+        }
+        ul li:first-child .course{
+            border: none;
+        }
+
+    }
+}
